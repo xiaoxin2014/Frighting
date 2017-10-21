@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="限时套餐"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/taocan"
+        android:layout_width="match_parent"
+        android:layout_height="165dp" />
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_marginTop="2dp"
+        android:id="@+id/recyclerView"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        />
+   <!-- <LinearLayout
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/taocan01"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+        <TextView
+            android:text="无使用期限"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="购￥1899套餐得2550"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="送601元"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <include layout="@layout/item_taocan"/>
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/taocan03"
+        android:layout_width="match_parent"
+        android:layout_height="145dp">
+        <TextView
+            android:text="无使用期限"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="购￥1899套餐得2550"
+            android:textSize="23sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="送601元"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

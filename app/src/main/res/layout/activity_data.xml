@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="平台数据"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="125dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/startDay"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="2014年9月"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/endDay"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="至今"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/shijianzhou"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:src="@drawable/jinbi_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="累计交易额 （元）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/money"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:text="20,746,352,207.7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:src="@drawable/khgl_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="累计服务用户 （人）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/people"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:text="20,746,352"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageView
+            android:src="@drawable/jinbi_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="安全运营 （天）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/every"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:textSize="19sp"
+                android:text="1,086"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

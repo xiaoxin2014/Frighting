@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">便捷加油</string>
+    <string name="more">违章查询</string>
+    <string name="share">首页</string>
+    <string name="mine">我的</string>
+    <string name="token_error">登录失效，请重新登录</string>
+</resources>

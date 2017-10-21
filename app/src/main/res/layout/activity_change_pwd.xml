@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/ec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="修改密码"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/phone"
+            android:textColor="@android:color/black"
+            android:text="账户：1348089960"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="155dp">
+        <EditText
+            android:password="true"
+            android:id="@+id/pwd"
+            android:hint="请输入原来的登录密码"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <View style="@style/line_ec" />
+        <EditText
+            android:password="true"
+            android:id="@+id/new_pwd"
+            android:hint="请输入新密码"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <View style="@style/line_ec" />
+        <EditText
+            android:password="true"
+            android:id="@+id/s_pwd"
+            android:hint="确认新密码"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <Button
+        android:text="提交"
+        android:id="@+id/commit"
+        android:textColor="@android:color/white"
+        android:layout_margin="60dp"
+        android:background="@drawable/text_color_orange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

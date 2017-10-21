@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            app:pager_animation="Accordion"
+            app:auto_cycle="true"
+            app:indicator_visibility="visible"
+            app:pager_animation_span="1100"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/service"
+            android:src="@mipmap/kefu_tab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/new_car"
+            android:gravity="center_horizontal"
+            android:text="新车推荐"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/xctj_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/data"
+            android:gravity="center_horizontal"
+            android:text="数据平台"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/ptsj_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/station"
+            android:gravity="center_horizontal"
+            android:text="附近油站"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/fjjy_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/share"
+            android:gravity="center_horizontal"
+            android:text="会员分享"
+            android:drawablePadding="5dp"
+            android:drawableTop="@mipmap/hyfx_icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/red_dot"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="6dp"
+            android:layout_height="6dp"/>
+        <my.tlol.com.frighting.widget.LooperTextView
+            android:id="@+id/daysMessage"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/taocan"
+                android:drawableLeft="@mipmap/lihe_icon"
+                android:text="限时套餐"
+                android:gravity="center"
+                android:drawablePadding="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="2dp"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/my_card"
+                android:drawableLeft="@mipmap/jyk_icon"
+                android:text="我的油卡"
+                android:gravity="center"
+                android:drawablePadding="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/jiayou"
+            android:orientation="vertical"
+            android:background="@color/ec"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_height="180dp">
+            <TextView
+                android:text="我要加油"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="团购加油可享"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="8折"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="优惠"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/wyjy_bg"
+                android:layout_marginTop="20dp"
+                android:layout_width="180dp"
+                android:layout_height="90dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/ec"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:layout_height="180dp">
+            <TextView
+                android:text="今日油价"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="92#"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:background="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="95#"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:background="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="98#"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:background="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:layout_height="60dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_92"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="7.45"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="21sp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:id="@+id/tv_95"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="6.45"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="21sp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:layout_height="70dp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="8.45"
+                    android:id="@+id/tv_98"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="21sp"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:layout_height="70dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:background="@color/ec"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</LinearLayout>

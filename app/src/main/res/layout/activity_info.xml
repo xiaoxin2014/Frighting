@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/ec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:src="@drawable/bingdao"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="加油宝 4.4.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/info"
+            style="@style/click"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="公司介绍"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/return_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@color/ec"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            style="@style/click"
+            android:id="@+id/phone"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="客服电话"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="400-819-7979"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@mipmap/return_s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="copyright @ 2017-2020 加油宝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

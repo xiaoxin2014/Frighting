@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="说明"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@mipmap/czsj_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:textColor="@android:color/black"
+            android:textSize="19sp"
+            android:layout_marginLeft="50dp"
+            android:text="充值时间09：00-22:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="逾期到账赔付红包"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:textSize="19sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="充值时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line_ec" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="1.购买后当天充值第一笔，balabalabala............."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="19sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="关于圈存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        style="@style/line_ec" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="1   “圈存”即激活已充值到账的金额到加油卡中，balabalabala............."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

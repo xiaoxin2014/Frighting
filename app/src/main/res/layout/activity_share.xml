@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <Button
+        android:textSize="28dp"
+        android:id="@+id/wechar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="微信支付"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="6dp"/>
+    <Button
+        android:textSize="28dp"
+        android:id="@+id/alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="支付宝支付"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+    <Button
+        android:textSize="28dp"
+        android:id="@+id/btn_qx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="取消"/>
+
+</LinearLayout>

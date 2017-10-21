@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/out"
+            style="@style/click"
+            android:src="@mipmap/leftback"
+            android:layout_width="40dp"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="客服"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/recyclerView"
+        android:background="@color/ec"
+        android:layout_height="0dp">
+
+    </com.jude.easyrecyclerview.EasyRecyclerView>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tips"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_color_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/edittext_color_orange"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:text="发送"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
